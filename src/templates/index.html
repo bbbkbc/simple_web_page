@@ -7,7 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-
+  <link rel="icon"
+      type="image/png"
+      href="{% static 'img/logo_360.jpg' %}">
   <title>{% block title %}Consulting360+{% endblock %}</title>
 
   <!-- Bootstrap Core CSS -->
@@ -19,7 +21,7 @@
   <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
 
   <!-- Custom CSS -->
-  <link href="{% static 'css/stylish-portfolio.min.css' %}" rel="stylesheet">
+  <link href="{% static 'css/stylish-portfolio.css' %}" rel="stylesheet">
 
 </head>
 
@@ -58,11 +60,11 @@
   <!-- Header -->
   <header class="masthead d-flex">
     <div class="container text-center my-auto">
-      <h1 class="mb-1">Consulting360+</h1>
-      <h3 class="mb-5">
+      <h2 class="mb-3">Consulting360+</h2>
+      <h4 class="mb-5">
         <em>„W świecie w którym możesz być każdym – bądź sobą!”</em>
         <p>(Etta Turner)</p>
-      </h3>
+      </h4>
       <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
     </div>
     <div class="overlay"></div>
@@ -149,78 +151,62 @@
         <h3 class="text-secondary mb-0">Zespół</h3>
         <h2 class="mb-5">Kim jesteśmy</h2>
       </div>
-
-        <div class="col-lg-7">
-          <a class="portfolio-item" href="#!">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Dagmara Stangierska</div>
-                <p class="text-white">Członek zarządu</p>
+        <div class="row no-gutters">
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h3">Dagmara Stangierska</div>
+                  <p class="text-white">Członek zarządu</p>
+                    <p class="mb-0">Absolwentka SGGW i Wydziału Psychologii UW; pracownica Wydziału Nauk o Żywieniu Człowieka
+                    i Konsumpcji. Autorka badań, ekspertyz i strategii promocyjnych dla firm oraz społecznych kampanii
+                    promocyjnych mleka, wieprzowiny i rolnictwa ekologicznego.</p>
+                  <p class="btn btn-dark btn-social mt-4" href="#!"><i class="fab fa-facebook-f"></i></p>
+                  <p class="btn btn-dark btn-social mt-4 ml-2" href="#!"><i class="fab fa-linkedin-in"></i></p>
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio-3.jpg' %}" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <img class="mx-auto img-fluid" src="{% static 'img/profile_dagmara.jpg' %}" alt="">
+                </div>
+              </div>
+              <img class="img-fluid" src="{% static 'img/portfolio-4.jpg' %}" alt="">
+            </a>
+          </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <div class="h2">Monika Świątkowska</div>
+                  <p class="text-white">Członek zarządu</p>
                   <p class="mb-0">Absolwentka SGGW i Wydziału Psychologii UW; pracownica Wydziału Nauk o Żywieniu Człowieka
-                  i Konsumpcji. Autorka badań, ekspertyz i strategii promocyjnych dla firm oraz społecznych kampanii
-                  promocyjnych mleka, wieprzowiny i rolnictwa ekologicznego.</p>
-                <p class="btn btn-dark btn-social mb-0" href="#!"><i class="fab fa-facebook-f"></i></p>
-                <p class="btn btn-dark btn-social mb-0" href="#!"><i class="fab fa-linkedin-in"></i></p>
+                    i Konsumpcji. Autorka badań, ekspertyz i strategii promocyjnych dla firm oraz społecznych kampanii
+                    promocyjnych mleka, wieprzowiny i rolnictwa ekologicznego.</p>
+                  <p class="btn btn-dark btn-social mt-4" href="#!"><i class="fab fa-facebook-f"></i></p>
+                  <p class="btn btn-dark btn-social mt-4 ml-2" href="#!"><i class="fab fa-linkedin-in"></i></p>
+                </div>
               </div>
-            </div>
-            <img class="img-fluid" src="{% static 'img/portfolio-3.jpg' %}" alt="">
-          </a>
-        </div>
-        <div class="col-lg-7">
-          <a class="portfolio-item" href="#!">
-            <div class="caption">
-              <div class="caption-content">
-                <div class="h2">Monika Świątkowska</div>
-                <p class="text-white">Członek zarządu</p>
-                <p class="mb-0">Absolwentka SGGW i Wydziału Psychologii UW; pracownica Wydziału Nauk o Żywieniu Człowieka
-                  i Konsumpcji. Autorka badań, ekspertyz i strategii promocyjnych dla firm oraz społecznych kampanii
-                  promocyjnych mleka, wieprzowiny i rolnictwa ekologicznego.</p>
-                <p class="btn btn-dark btn-social mb-0" href="#!"><i class="fab fa-facebook-f"></i></p>
-                <p class="btn btn-dark btn-social mb-0" href="#!"><i class="fab fa-linkedin-in"></i></p>
-              </div>
-            </div>
-            <img class="img-fluid" src="{% static 'img/portfolio-4.jpg' %}" alt="">
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Team-->
-  <section class="page-section bg-light" id="team">
-      <div class="container">
-          <div class="text-center">
-              <h2 class="section-heading text-uppercase">Our Amazing Team</h2>
-              <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+              <img class="img-fluid" src="{% static 'img/portfolio-1.jpg' %}" alt="">
+            </a>
           </div>
-          <div class="row">
-              <div class="col-lg-4">
-                  <div class="team-member">
-                      <img class="mx-auto rounded-circle" src="assets/img/team/1.jpg" alt="" />
-                  </div>
+          <div class="col-lg-6">
+            <a class="portfolio-item" href="#!">
+              <div class="caption">
+                <div class="caption-content">
+                  <img class="mx-auto img-fluid" src="{% static 'img/profile_monika.jpg' %}" alt="">
+                </div>
               </div>
-              <div class="col-lg-4">
-                  <div class="team-member">
-                      <img class="mx-auto rounded-circle" src="assets/img/team/2.jpg" alt="" />
-                  </div>
-              </div>
-              <div class="col-lg-4">
-                  <div class="team-member">
-                      <img class="mx-auto rounded-circle" src="assets/img/team/3.jpg" alt="" />
-                  </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p></div>
-          </div>
-      </div>
-  </section>
+              <img class="img-fluid" src="{% static 'img/portfolio-2.jpg' %}" alt="">
+            </a>
 
-  <!-- Call to Action -->
-  <section class="content-section bg-primary text-white">
-    <div class="container text-center">
-      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
-      <a href="#!" class="btn btn-xl btn-light mr-4">Click Me!</a>
-      <a href="#!" class="btn btn-xl btn-dark">Look at Me!</a>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -249,7 +235,7 @@
         </li>
 
         <li class="list-inline-item">
-          <a class="social-link rounded-circle text-white" href="#!">
+          <a class="social-link rounded-circle text-white" href="https://github.com/bbbkbc">
             <i class="icon-social-github"></i>
           </a>
         </li>
