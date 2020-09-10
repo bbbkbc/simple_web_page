@@ -18,8 +18,15 @@ body {
   padding: 1.25rem 2.5rem;
 }
 
+.btn-xxl {
+  padding: 1rem 2rem;
+  font-size: 3.25rem;
+  line-height: 1.5;
+  border-radius: 0.8rem;
+}
+
 .content-section {
-  padding-top: 7.5rem;
+  padding-top: 6.5rem;
   padding-bottom: 7.5rem;
 }
 
@@ -123,7 +130,7 @@ h6 {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: #1D809F;
+  background: #1d9f3e;
   border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 
@@ -209,6 +216,7 @@ h6 {
   line-height: 7.5rem;
   font-size: 2.25rem;
   box-shadow: 0 3px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: background-color 0.15s ease-in-out;
 }
 
 .callout {
@@ -227,18 +235,19 @@ h6 {
 }
 
 .portfolio-item {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   display: block;
   position: relative;
   overflow: hidden;
   max-width: 530px;
-  margin: auto auto 1rem;
+  max-height:750px;
+  margin: 1rem 0rem 0rem;
 }
 
 .portfolio-item .caption {
-  display: flex;
+  display: fluid;
   height: 100%;
   width: 100%;
-  background-color: rgba(33, 37, 41, 0.2);
   position: absolute;
   top: 0;
   bottom: 0;
@@ -248,16 +257,19 @@ h6 {
 .portfolio-item .caption .caption-content {
   color: #fff;
   margin: auto 2rem 2rem;
+
 }
 
 .portfolio-item .caption .caption-content h2 {
+  text-shadow: 2px 2px 2px #4a4848;
   font-size: 0.8rem;
   text-transform: uppercase;
 }
 
 .portfolio-item .caption .caption-content p {
-  font-weight: 300;
-  font-size: 1.2rem;
+  text-shadow: 3px 3px 3px #4a4848;
+  font-weight: 400;
+  font-size: 1.22rem;
 }
 
 @media (min-width: 992px) {
@@ -265,34 +277,11 @@ h6 {
     max-width: none;
     margin: 0;
   }
-  .portfolio-item .caption {
-    transition: background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, background-color 0.7s;
-    transition: clip-path 0.25s ease-out, background-color 0.7s, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(0px);
-    clip-path: inset(0px);
-  }
   .portfolio-item .caption .caption-content {
     transition: opacity 0.25s;
     margin-left: 5rem;
     margin-right: 5rem;
     margin-bottom: 5rem;
-  }
-  .portfolio-item img {
-    transition: -webkit-clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out;
-    transition: clip-path 0.25s ease-out, -webkit-clip-path 0.25s ease-out;
-    -webkit-clip-path: inset(-1px);
-    clip-path: inset(-1px);
-  }
-  .portfolio-item:hover img {
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
-  }
-  .portfolio-item:hover .caption {
-    background-color: rgba(29, 128, 159, 0.9);
-    -webkit-clip-path: inset(2rem);
-    clip-path: inset(2rem);
   }
 }
 
@@ -372,4 +361,8 @@ a:hover, a:focus, a:active {
 
 .text-secondary {
   color: #ecb807 !important;
+}
+
+.bg-services {
+  background-color: #b4e255;
 }
