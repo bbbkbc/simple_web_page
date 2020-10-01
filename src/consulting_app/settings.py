@@ -10,12 +10,22 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'ohn)r!o92-uo963yxe=r+i!+pvg_t8e)jf6aup4z!$w-5pjwo4'
+with open(os.path.join(BASE_DIR, 'SECRET_KEY')) as f:
+    SECRET_KEY = f.read().strip()
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+# Production setup
 
-ALLOWED_HOSTS = ['300f0ef45deb.ngrok.io', '127.0.0.1', 'localhost']
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+SECURE_SSL_REDIRECT = True
+
+DEBUG = False
+ALLOWED_HOSTS = []
+
+# Development setup
+# DEBUG = True
+# ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -39,6 +49,7 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'consulting_app.urls'
 TEMPLATE_DIR = os.path.join(BASE_DIR, 'templates')
