@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon"
+      type="image/png"
+      href="{% static 'img/logo_360.jpg' %}">
+  <title>{% block title %}Consulting360+{% endblock %}</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="{% static 'vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="{% static 'vendor/simple-line-icons/css/simple-line-icons.css' %}" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="{% static 'css/stylish-portfolio.css' %}" rel="stylesheet">
+
+</head>
+
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Consulting360+</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Strona główna</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">Oferta</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#callout">Misja</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Zespół</a>
+      </li>
+            <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Napisz do nas</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Siedziba firmy</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <div class="mb-3 h1 text-light">Consulting360+</div>
+      <div class="mb-5 h4">
+        <p class="text-light">Strategie szyte na miarę</p>
+      </div>
+      <a class="btn btn-success btn-xl js-scroll-trigger" href="#about">O firmie</a>
+    </div>
+    <div class="overlay"></div>
+  </header>
+
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <div class="h1 mb-2">Specjalizujemy się w rozwiązaniach zarządczych i marketingowych dla przedsiębiorstw rolno-spożywczych</div>
+          <br/>
+          <p class="lead mb-1"> <i class="fas fa-leaf text-success "></i> dla sektora spożywczego: żywności ekologicznej, wygodnej, funkcjonalnej;</p>
+            <p class="lead mb-1"> <i class="fas fa-tractor text-success"></i> dla sektora rolnego: grup producenckich i przedsiębiorstw sadowniczych oraz warzywniczych;</p>
+            <p class="lead mb-3"> <i class="fas fa-utensils text-success"></i> dla sektora usług żywieniowych, w tym gastronomii, cateringu, dietetyki.</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">Nasza Oferta</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section class="content-section bg-services text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-success mb-0 h3">Usługi</h3>
+        <h2 class="mb-5 h2">Nasza Oferta</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+          <button type="button" class="btn btn-success btn-xxl rounded-circle mx-auto mb-3" data-toggle="modal" href="#portfolioModal1">
+            <i class="icon-puzzle" ></i>
+          </button>
+          <h4>
+            <strong class="h4">Consulting</strong>
+          </h4>
+          <p class="text-faded mb-0">Biznesowy i Marketingowy</p>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-5 mb-lg-0">
+          <button type="button" class="btn btn-success btn-xxl rounded-circle mx-auto mb-3" data-toggle="modal" href="#portfolioModal2">
+            <i class="icon-chart" ></i>
+          </button>
+          <h4>
+            <strong class="h4">Badania marketingowe</strong>
+          </h4>
+        </div>
+
+        <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
+          <button type="button" class="btn btn-success btn-xxl rounded-circle mx-auto mb-3" data-toggle="modal" href="#portfolioModal3">
+            <i class="icon-book-open" ></i>
+          </button>
+          <h4>
+            <strong class="h4">Szkolenia</strong>
+          </h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Callout -->
+  <section class="content-section callout bg-team" id="callout">
+    <div class="container-fluid">
+      <div class="container text-center text-white my-auto">
+       <h1 class="mb-5 h2">Nasza Misja</h1>
+        <h4 class="mb-5 h4">
+          <em>„W świecie w którym możesz być każdym – bądź sobą!”</em>
+          <p>(Etta Turner)</p>
+        </h4>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <div class="portfolio-caption mb-4">
+              <div class="portfolio-caption-heading text-center text-white h3">Misja</div>
+              <div class="portfolio-caption-subheading text-justify text-white h5">
+                <p class="mb-0">
+                  Misją firmy jest wspieranie sektora żywności ekologicznej, wykorzystując holistyczne i zrównoważone podejścia,
+                  stosując autorskie narzędzia dedykowane sektorowi tej żywności w Polsce. Misja ta jest realizowana zarówno
+                  jako konkretne zadania związane z rozwojem przedsiębiorstw ekologicznych, ale również udzielanie szeroko
+                  rozumianego doradztwa dla całego sektora oraz promocję idei żywności ekologicznej w Polsce
+                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6 col-sm-6 mb-4">
+          <div class="portfolio-item">
+            <div class="portfolio-caption">
+              <div class="portfolio-caption-heading text-center text-white h3">Wizja</div>
+              <div class="portfolio-caption-subheading text-white text-justify h5">
+                <p class="mb-0">
+                  Nasi klienci często mają wszystko, czego potrzeba, aby odnieść sukces, brakuje im jednak zasobów i wsparcia,
+                  aby mogli dokonać strategicznego posunięcia. Chcemy stanowić pomoc dla naszych klientów w osiąganiu jeszcze
+                  większych sukcesów.
+                </p>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- team -->
+  <section class="portfolio bg-services" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+      <br/><br/>
+        <h3 class="text-success mb-0 h3 text-white">Zespół</h3>
+        <h2 class="mb-5 h2 text-white">Kim jesteśmy</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 col-md-6 mb-4 mb-md-0">
+          <div class="text-center">
+            <img class="rounded mt-2 img-responsive mb-2 center" src="{% static 'img/dagmara.jpg' %}" alt="">
+            <div class="h3 text-white">Dagmara Stangierska</div>
+            <p class="text-white">Członek zarządu</p>
+          </div>
+          <p class="mb-0 text-white text-justify">Absolwentka SGGW i Wydziału Psychologii UW; pracownica Wydziału Nauk o Żywieniu Człowieka
+            i Konsumpcji. Autorka badań, ekspertyz i strategii promocyjnych dla firm oraz społecznych kampanii
+            promocyjnych mleka, wieprzowiny i rolnictwa ekologicznego.</p>
+          <p class="btn btn-dark btn-social mt-4" href="#!"><i class="fab fa-facebook-f"></i></p>
+          <p class="btn btn-dark btn-social mt-4 ml-2" href="#!"><i class="fab fa-linkedin-in"></i></p>
+        </div>
+
+        <div class="col-lg-6 col-md-6 mb-4 mb-lg-0">
+          <div class="text-center">
+            <img class="rounded mt-2 img-responsive mb-2 center" src="{% static 'img/monika.jpg' %}" alt="">
+            <div class="h3 text-white">Monika Świątkowska</div>
+            <p class="text-white">Członek zarządu</p>
+          </div>
+          <p class="mb-0 text-white text-justify">Absolwentka SGGW i Wydziału Psychologii UW; pracownica Wydziału Nauk o Żywieniu Człowieka
+            i Konsumpcji. Autorka badań, ekspertyz i strategii promocyjnych dla firm oraz społecznych kampanii
+            promocyjnych mleka, wieprzowiny i rolnictwa ekologicznego.</p>
+          <p class="btn btn-dark btn-social mt-4" href="#!"><i class="fab fa-facebook-f"></i></p>
+          <p class="btn btn-dark btn-social mt-4 ml-2" href="#!"><i class="fab fa-linkedin-in"></i></p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="content-section bg-light">
+    <div class="container text-center mt-n2">
+      <div class="mb-4 h1">Kontakt</div>
+      <p class="h4">Konduktorska 3a/20, 00-775 Warszawa</p>
+      <p class="h4">zarzad@consulting360plus.com</p>
+      <p class="h4">691 205 872 lub 603 647 181</p>
+    </div>
+  </section>
+  <section class="content-section bg-light">
+    <div class="container text-center mt-n2">
+      <div class="mb-4 h1">Kontakt</div>
+      <p class="h4">Konduktorska 3a/20, 00-775 Warszawa</p>
+      <p class="h4">zarzad@consulting360plus.com</p>
+      <p class="h4">691 205 872 lub 603 647 181</p>
+    </div>
+  </section>
+  <!-- Map -->
+  <div id="contact" class="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.4072601353528!2d21.02795531521645!3d52.19964616767405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecd2f6c3584b1%3A0x97a32250e3d812c8!2sKonduktorska%203A%2C%2000-775%20Warszawa!5e0!3m2!1spl!2spl!4v1599159181784!5m2!1spl!2spl"></iframe>
+    <br />
+    <small>
+      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2445.4072601353528!2d21.02795531521645!3d52.19964616767405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471ecd2f6c3584b1%3A0x97a32250e3d812c8!2sKonduktorska%203A%2C%2000-775%20Warszawa!5e0!3m2!1spl!2spl!4v1599159181784!5m2!1spl!2spl;iwloc=A"></a>
+    </small>
+  </div>
+
+  <!-- Portfolio Modals-->
+  <!-- Modal 1-->
+  <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col">
+              <div class="modal-body">
+                <!-- Project Details Go Here-->
+                <div class="modal-header">
+                  <h5 class="text-uppercase">
+                    <strong class="h4">Consulting biznesowy i marketingowy</strong>
+                  </h5>
+                  <button type="button btn-dark" class="close" data-dismiss="modal"  type="button">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="lead mb-1 text-justify">
+                    Obecnie prowadzenie biznesu jest bardziej złożone niż jeszcze kilka lat temu;
+                    z jednej strony wymaga posiadania i modyfikowania długofalowych strategii, z drugiej strony
+                    - ciągłego rozwiązywania problemów operacyjnych. Pomagamy tworzyć i rozwijać strategię przedsiębiorstwa
+                    w zgodzie z jego tożsamością. Opracowujemy koncepcje nowych produktów/marek, strategie marketingowe,
+                    w tym kampanie promocyjne. Naszym atutem jest znajomość rynku rolno-żywnościowego a także
+                    doświadczenie w tworzeniu rozwiązań biznesowych dla tego rynku. Współpraca w ramach
+                    consultingu może mieć charakter projektowy oraz bieżącego, stałego doradztwa.
+                  </p>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 2-->
+  <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col">
+              <div class="modal-body">
+                <!-- Project Details Go Here-->
+                <div class="modal-header">
+                  <h5 class="text-uppercase">
+                    <strong class="h4">Badania marketingowe</strong>
+                  </h5>
+                  <button type="button btn-dark" class="close" data-dismiss="modal"  type="button">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="lead mb-1 text-justify">
+                    Badania marketingowe stanowią naturalny i nieodzowny element procesu opracowywania strategi marketingowej.
+                    Sprawiają, iż działania które zostaną podjęte będą efektywne i skuteczne.
+                  </p>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal 3-->
+  <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col">
+              <div class="modal-body">
+                <!-- Project Details Go Here-->
+                <div class="modal-header">
+                  <h5 class="text-uppercase">
+                    <strong class="h4">Szkolenia</strong>
+                  </h5>
+                  <button type="button btn-dark" class="close" data-dismiss="modal"  type="button">
+                    <i class="fas fa-times"></i>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <p class="lead mb-1 text-justify">
+                    Wspieramy naszych klientów w ciągłym rozwoju nie tylko marketingowym i strategicznym,
+                    ale też w podnoszeniu ich  kompetencji marketingowych.
+                  </p>
+                </div>
+                <div class="modal-footer"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer class="footer text-center py-4">
+    <div class="container">
+      <ul class="list-inline mb-4">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#!">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="#!">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+        </li>
+
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/bbbkbc">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Your Website 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="{% static 'js/stylish-portfolio.min.js' %}"></script>
+
+</body>
+
+</html>
